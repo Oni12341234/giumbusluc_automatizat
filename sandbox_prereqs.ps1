@@ -11,7 +11,7 @@
 		A description of the file.
 #>
 
-Set-Variable ProgressPreference SilentlyContinue
+#Set-Variable ProgressPreference SilentlyContinue
 $PHISH_URL_DONT_CLICK = "https://www.youtube.com/watch?v=iCPP3BNc6yY"
 
 

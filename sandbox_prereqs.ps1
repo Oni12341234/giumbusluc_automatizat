@@ -51,10 +51,10 @@ foreach ($app in $appArray)
 		
 		#install software
 		Write-Host "Downloading $($app.App)..."
-		Invoke-WebRequest $app.App_source -OutFile $app.Destination	
+		(new-object Net.WebClient).DownloadFile($app.App_source, $app.Destination)
+		Write-Host "Installing $($app.App)..."
 		Start-Process -FilePath $app.Destination -ArgumentList $app.Argument -Wait
 		#Delete installer
 		Remove-Item -Recurse $app.Destination
 	}
 }
-pause

@@ -10,7 +10,7 @@ Fisierul WSB nu contine mare lucru, doar mapeaza folderul si da drumul la jumpst
 
 ## Cum il pun la mine
 
-In teorie, descarci efectiv fisierele si rulezi .wsb - momentan nu am testat decat la mine, deci aveti grija deocamdata.
+In teorie, descarci efectiv fisierele schimbi primul path cu unde ai salvat tu fisierele si rulezi .wsb, dar sunt sanse sa se incarce ft greu in functie de instanta ta de sandbox. Momentan nu ai nevoie de jumpstart daca il incerci asa
     
 ## Cum ar trebui sa arate
 

@@ -1,7 +1,8 @@
 <#	
 	.NOTES
 	===========================================================================
-	 Created with: 	BIG Capacitate mentala.
+	 Created with: 	BIG Capacitate mentala, Ciprian LUP BATRAN
+     Supervised by: George The OLD OFFICER
 	 Created on:   	11/6/2024 8:41 PM
 	 Created by:   	Johnny the Great Dolphin SS3
 	 Organization: 	
@@ -14,6 +15,10 @@
 #Set-Variable ProgressPreference SilentlyContinue
 $PHISH_URL_DONT_CLICK = "https://www.youtube.com/watch?v=iCPP3BNc6yY"
 
+Write-Host "Created with: 	BIG Capacitate mentala
+            Supervised by: George The OLD OFFICER
+	        Created on:   	11/6/2024 8:41 PM
+	        Created by:   	Johnny the Great Dolphin SS3, Ciprian LUP BATRAN"
 
 # Create an array whose elements are hashtables.
 $appArray = (
@@ -55,6 +60,7 @@ foreach ($app in $appArray)
 		Write-Host "Installing $($app.App)..."
 		Start-Process -FilePath $app.Destination -ArgumentList $app.Argument -Wait
 		#Delete installer
+        Write-Host "Deleting $($app.App)..."
 		Remove-Item -Recurse $app.Destination
 	}
 }

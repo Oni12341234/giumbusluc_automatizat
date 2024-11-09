@@ -1,12 +1,12 @@
 <Configuration>
   <MappedFolders>
     <MappedFolder>
-      <HostFolder>.</HostFolder>
-      <SandboxFolder>C:\Users\WDAGUtilityAccount\Downloads\sandbox</SandboxFolder>
-      <ReadOnly>true</ReadOnly>
+      <HostFolder>C:\Users\IonutDobre\Downloads\testtest</HostFolder>
+      <SandboxFolder>C:\sandbox</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
     </MappedFolder>
   </MappedFolders>
   <LogonCommand>
-    <Command>powershell.exe -ExecutionPolicy Bypass "C:\Users\WDAGUtilityAccount\Downloads\sandbox\jumpstart.ps1"</Command>
+    <Command>powershell.exe -NoExit -ExecutionPolicy Bypass -Command "Start-Process powershell.exe -ArgumentList '-NoExit', '-ExecutionPolicy', 'Bypass', '-File', 'C:\sandbox\sandbox_prereqs.ps1'"</Command>
   </LogonCommand>
 </Configuration>
